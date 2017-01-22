@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:splitspace-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_OTG P1
+L USB_OTG-RESCUE-splitspace P1
 U 1 1 576E0F9F
 P 1100 2050
 F 0 "P1" H 1425 1925 50  0000 C CNN
@@ -231,7 +232,7 @@ F 3 "" H 1700 2900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-splitspace D1
 U 1 1 576E0FB0
 P 5450 3550
 F 0 "D1" H 5450 3650 50  0000 C CNN
@@ -364,7 +365,7 @@ F 3 "" H 1250 1650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ATmega32U4 U1
+L ATmega32U4-RESCUE-splitspace U1
 U 1 1 576E0F9E
 P 3750 3300
 F 0 "U1" H 2850 5000 50  0000 C CNN
@@ -1964,6 +1965,17 @@ F 3 "" H 21100 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4200 5000
+$Comp
+L CONN_01X02 P2
+U 1 1 5884B6BC
+P 6300 1900
+F 0 "P2" H 6300 2050 50  0000 C CNN
+F 1 "CONN_01X02" V 6400 1900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6300 1900 50  0001 C CNN
+F 3 "" H 6300 1900 50  0000 C CNN
+	1    6300 1900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2100 1400 2100 2050
 Connection ~ 2400 1400
@@ -1976,7 +1988,6 @@ Connection ~ 1800 2250
 Wire Wire Line
 	1800 1400 1800 2250
 Connection ~ 2150 2050
-Connection ~ 2250 1950
 Connection ~ 2400 1850
 Wire Wire Line
 	2400 1400 2400 1850
@@ -1994,10 +2005,6 @@ Wire Wire Line
 	2150 4400 2150 4300
 Wire Wire Line
 	2450 4400 2150 4400
-Wire Wire Line
-	2250 4000 2550 4000
-Wire Wire Line
-	2250 2850 2250 4000
 Wire Wire Line
 	2200 1950 2500 1950
 Wire Wire Line
@@ -2037,8 +2044,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 1950 5100 1050
 Wire Wire Line
-	4950 1950 5100 1950
-Wire Wire Line
 	3200 1050 3300 1050
 Wire Wire Line
 	3200 1400 3200 1050
@@ -2064,8 +2069,6 @@ Wire Wire Line
 	2200 2750 2200 2850
 Wire Wire Line
 	1950 3150 2500 3150
-Wire Wire Line
-	2250 1950 2250 2950
 Wire Wire Line
 	2200 2850 2500 2850
 Wire Wire Line
@@ -2128,17 +2131,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 4500 2450 4550
 Wire Wire Line
-	2500 4350 2500 4300
-Wire Wire Line
-	2500 4300 2450 4300
-Wire Wire Line
 	2450 4400 2450 4450
-Wire Wire Line
-	2550 4250 2450 4250
-Wire Wire Line
-	2450 4250 2450 4300
-Wire Wire Line
-	2550 4000 2550 3950
 Wire Wire Line
 	2050 2900 2050 3150
 Wire Wire Line
@@ -2273,7 +2266,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 2650 9700 2850
 Wire Wire Line
-	9850 3150 9600 3150
+	9600 3150 9850 3150
 Wire Wire Line
 	10300 3700 10350 3700
 Wire Wire Line
@@ -2283,7 +2276,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 3500 9700 3700
 Wire Wire Line
-	9850 4000 9600 4000
+	9600 4000 9850 4000
 Wire Wire Line
 	10300 4550 10450 4550
 Wire Wire Line
@@ -3134,4 +3127,25 @@ Wire Wire Line
 Wire Wire Line
 	21400 2050 20950 2050
 Connection ~ 20950 2050
+Wire Wire Line
+	2550 4250 2550 4300
+Wire Wire Line
+	2550 4300 2450 4300
+Wire Wire Line
+	2450 4300 2450 4350
+Wire Wire Line
+	2550 3950 1900 3950
+Wire Wire Line
+	1900 3950 1900 1400
+Connection ~ 1900 1400
+Wire Wire Line
+	4950 1750 6100 1750
+Wire Wire Line
+	6100 1750 6100 1850
+Wire Wire Line
+	4950 1950 5100 1950
+Wire Wire Line
+	4950 4650 6100 4650
+Wire Wire Line
+	6100 4650 6100 1950
 $EndSCHEMATC
